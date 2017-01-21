@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diversity Hackathon</title>
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <!-- font-family: "Lato", sans-serif; -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">  
+    <style>
+      .test {
+        border: 1px solid red;
+      }
+      * {
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        letter-spacing: inherit;
+        color: inherit;
+        text-align: inherit;
+      } 
+      html, body {
+        font-family: "Lato", sans-serif;
+        font-size: 36px;
+        letter-spacing: 3px;
+        text-align: left;
+        font-weight: 700;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+      }  
+      .header {
+        color: #d0011b; 
+        background-color: #ffffff;
+        border-bottom: 1px solid #e5e5e5;
+        height: 3.5em;
+        width: 100%;
+        padding: 1em;
+      }
+      .tagline, .logos, .logos-content, .header-content { height: 100%; }
+      [class$="-logo"] {
+        max-height: 90%;
+        padding-right: 1em;
+      }
+      .page-content {
+        height: calc(100vh - 3.5em);
+        width: 100vw;
+        background: url("img/bckgrnd.png") no-repeat fixed center;
+        background-size: cover;
+      }
+      .coming-soon {
+        width: 350px;
+        position: absolute;
+        margin-left: -175px;
+        left: 50%;
+        bottom: 20%;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.75em;
+        color: #ffffff;
+      }
+      .adi-logo {
+        height: 70%;
+      }
+      /* UNIVERSAL */
+      [class*="col"] { float: left; }
+      .row {
+        width: 100%;
+        min-height: 1px;
+      }
+      .row::after, .row::before {
+        display: table;
+        width: 100%;
+        content: '';
+        clear: both; 
+      }
+      [class*="flex"] {
+        display: flex;
+        align-items: center;
+      }
+      .flex-right { justify-content: flex-end; }
+      /* MOBILE EXCLUSIVE */
+      @media (max-width: 40em) {
+        .xs-hide { display: none; }
+        .xs-col-12 { width: 100%; }
+      }
+      /* PHABLET */
+      @media (min-width: 40em) and (max-width: 52em) {
+        .sm-hide { display: none; }
+        .sm-col-12 { width: 100%; }
+      }
+      /* TABLET */
+      @media (min-width: 52em) and (max-width: 64em) {
+        .md-col-6 { width: 50%; }
+      }
+      /* DESKTOP */
+      @media (min-width: 64em) {
+        .lg-col-6 { width: 50%; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">
+        <div class="header-content row">
+          <div class="xs-col-12 sm-col-12 md-col-6 lg-col-6 tagline">
+            for us by us.
+          </div>
+          <div class="xs-hide sm-hide md-col-6 lg-col-6 logos">
+            <div class="flex-right logos-content">
+              <img class="adi-logo" src="img/adi.png"> 
+              <img class="wics-logo" src="img/wics.png"> 
+              <img class="colorcode-logo" src="img/colorcode.png"> 
+            </div> 
+          </div>
+        </div> 
+      </div> 
+
+      <div class="page-content">
+        <div class="coming-soon">coming soon</div> 
+      </div>
+
+    </div>
+  </body>
+
+</html>
